@@ -1,4 +1,4 @@
-# pac-man-game
+# Pac-Man-game
 Classic pacman game using vanilla JavaScript with HTML and CSS
 
 https://joujou144.github.io/pac-man-game/
