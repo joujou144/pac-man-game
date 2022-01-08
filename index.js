@@ -146,6 +146,7 @@
       squares[pacmanCurrentIndex].classList.remove("power-pellet")
       // score add by 10
       score +=10
+      scoreDisplay.innerHTML = score
       // ghosts are scared
       ghosts.forEach(ghost => ghost.isScared = true)
       // set timer for 10 seconds
@@ -214,12 +215,15 @@
 
       //if the ghost is scared AND pacman is on it
       if (ghost.isScared && squares[ghost.currentIndex].classList.contains("pacman")) {
+        console.log(ghost.currentIndex)
         // remove classNames ghost and scared-ghost
         squares[ghost.currentIndex].classList.remove(ghost.className, "ghost", "scared-ghost")
         // change ghost position to startIndex
+        console.log(ghost.startIndex)
         ghost.currentIndex = ghost.startIndex
         // add score 100
-        score +=100    
+        score +=100
+        scoreDisplay.innerHTML = score
         //re-add classnames of ghost to the new position
         squares[ghost.currentIndex].classList.add(ghost.className, "ghost")
       }
