@@ -213,7 +213,7 @@
       }
 
       //if the ghost is scared AND pacman is on it
-      if (ghost.isScared && squares[ghost.CurrentIndex].classList.contains("pacman")) {
+      if (ghost.isScared && squares[ghost.currentIndex].classList.contains("pacman")) {
         // remove classNames ghost and scared-ghost
         squares[ghost.currentIndex].classList.remove(ghost.className, "ghost", "scared-ghost")
         // change ghost position to startIndex
