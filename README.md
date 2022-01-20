@@ -1,6 +1,8 @@
 # Pac-Man-game
 Classic pacman game using vanilla JavaScript with HTML and CSS
 
+## Demo
+
 https://joujou144.github.io/pac-man-game/
 
 This game showcases Pac-Man moving around the grid while avoiding walls, and the constructor method is used for all four ghosts to apply their unque characteristics to each one, including at what speed they move at. Catty, being the slowest ghost.
